@@ -15,12 +15,13 @@ Parses RISC-V instruction definitions from `instr_dict.json`, cross-references t
 
 ```bash
 # 1. Clone this repository
-git clone 
-cd risc-v-instruction-set-explorer
+git clone https://github.com/SnehaChaurasia/RISC-V-Instruction-Explorer.git
+cd RISC-V-Instruction-Explorer
 
 # 2. Fetch the instruction dictionary
 git clone https://github.com/rpsene/riscv-extensions-landscape
 cp riscv-extensions-landscape/instr_dict.json .
+Note: Already given.
 
 # 3. Fetch the ISA manual (required for Tier 2)
 git clone https://github.com/riscv/riscv-isa-manual
@@ -382,4 +383,4 @@ graph TD
 - **Single-letter false positives** — Extensions like `M`, `F`, `S` are single uppercase letters. In dense manual prose, these can still match legitimate single-letter occurrences (e.g. "F format", "M mode"). The blocklist mitigates the most common cases but is not exhaustive.
 - **Relationship graph scope** — The graph reflects instruction sharing only. It does not encode ISA subsetting rules, extension implication relationships, or profile membership as defined in the RISC-V specification.
 - **JSON key ordering** — JavaScript object key order is insertion-order in V8 for string keys. The Tier 1 output is sorted alphabetically by tag to ensure consistent output across runs.
-- **29 JSON-only extensions** — These extensions (e.g. `zvfbdot32f`, `zvqdotq`) are present in `instr_dict.json` but not yet documented in the scanned AsciiDoc sources. This likely reflects extensions that are still in draft or were added to the JSON before the manual chapters were written.
+- **JSON-only extensions** — These extensions (e.g. `zvfbdot32f`, `zvqdotq`) are present in `instr_dict.json` but not yet documented in the scanned AsciiDoc sources. This likely reflects extensions that are still in draft or were added to the JSON before the manual chapters were written.
