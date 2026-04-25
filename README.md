@@ -329,8 +329,6 @@ graph TD
   zvks --- zvksh
   zvks --- zvksed
 ```
-```
-
 ---
 
 ## Features
