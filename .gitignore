@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# External Data (fetched during setup)
+instr_dict.json
+riscv-isa-manual/
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Test Artifacts
+mock_instr.json
+mock_manual/
+mock_instr.json
